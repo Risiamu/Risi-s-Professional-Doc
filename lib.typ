@@ -39,7 +39,7 @@
     spacing: 15pt,
   )
   set align(center)
-  set text(font: sans-font, 18pt, weight: "light", style: "italic", fill: blue)
+  set text(font: sans-font, 12pt, weight: "light", style: "italic", fill: blue)
   body
 }
 
