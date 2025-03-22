@@ -40,6 +40,7 @@
   )
   set align(center)
   set text(font: sans-font, 12pt, weight: "light", style: "italic", fill: blue)
+  set block(inset: (left: 10px, right: 10px))
   body
 }
 
