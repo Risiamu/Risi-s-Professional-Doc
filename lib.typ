@@ -40,7 +40,7 @@
   )
   set align(left)
   set text(font: sans-font, 12pt, weight: "light", style: "italic", fill: blue)
-  set block(inset: (left: 70pt, right: 70pt))
+  set block(inset: (left: 70pt, right: 70pt), above: 20pt, below: 20pt)
   block(body)
 }
 
