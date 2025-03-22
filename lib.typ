@@ -38,7 +38,7 @@
     leading: 18pt,
     spacing: 15pt,
   )
-  set align(center)
+  set align(left)
   set text(font: sans-font, 12pt, weight: "light", style: "italic", fill: blue)
   set block(inset: (left: 10pt, right: 10pt))
   body
