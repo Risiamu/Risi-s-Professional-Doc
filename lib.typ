@@ -49,7 +49,7 @@
   set block(above: 5pt, below: 5pt)
   show heading: set text(font: heading-font, 32pt, weight: "extrabold")
   block(body)
-  line(length: 100%, stroke: 1.5pt + black, y: -8pt)
+  line(length: 75%, stroke: 1.5pt + black)
   // set heading(numbering: "1 - 1")
 }
 
@@ -59,6 +59,8 @@
   show heading: set text(font: heading-font, 26pt, weight: "extrabold")
   // set heading(numbering: "1 - 1")
   block(body)
+  line(length: 45%, stroke: 1pt + black)
+
 }
 
 
