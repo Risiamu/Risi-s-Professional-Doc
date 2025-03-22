@@ -1,7 +1,7 @@
-#let body-font = "更紗黑體 CL"
-#let sans-font = "更紗黑體 CL"
+#let body-font = "Sarasa UI SC"
+#let sans-font = "Sarasa UI SC"
 #let mono-font = "Sarasa Term CL"
-#let title-font = "HYZiDIanSong"
+#let title-font = "HYQiHei-55S"
 #let heading-font = "HYQiHei-25S"
 
 #let risi-pro(
