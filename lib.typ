@@ -69,10 +69,10 @@
 
 // Export the main template function and styles
 #export(
-  "risi-pro": risi-pro,
-  "normal": normal,
-  "quote": quote,
-  "heading1": heading1,
-  "title": title,
-  "lightblueCode": lightblueCode
+  risi-pro,
+  normal,
+  quote,
+  heading1,
+  title,
+  lightblueCode
 )
