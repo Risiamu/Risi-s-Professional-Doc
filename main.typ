@@ -22,7 +22,5 @@
 ]
 
 #lightblueCode[
-  ```typst
-  #lightblueCode is used to display Code.
-  ```
+  #raw("```typst\n#lightblueCode is used to display Code.\n```", lang: "typst")
 ]
