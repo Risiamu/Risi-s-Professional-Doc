@@ -51,6 +51,16 @@
   block(body)
 }
 
+#let heading2(body) = {
+  set align(left)
+  set block(above: 5pt, below: 5pt)
+  show heading: set text(font: heading-font, 32pt, weight: "light")
+  set heading(numbering: "1 - 1")
+  block(body)
+}
+
+
+
 #let title(body) = {
   set align(left)
   set block(above: 5pt, below: 20pt)
