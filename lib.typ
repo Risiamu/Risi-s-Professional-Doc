@@ -67,12 +67,10 @@
   )
 )
 
-// Export the main template function and styles
-#export(
-  risi-pro,
-  normal,
-  quote,
-  heading1,
-  title,
-  lightblueCode
-)
+// Make functions available to importing modules
+#let risi-pro = risi-pro
+#let normal = normal
+#let quote = quote
+#let heading1 = heading1
+#let title = title
+#let lightblueCode = lightblueCode
