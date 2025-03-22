@@ -47,7 +47,7 @@
   set align(left)
   set block(above: 5pt, below: 5pt)
   show heading: set text(font: heading-font, 40pt, weight: "light")
-  set heading(numbering: "1 - 1")
+  // set heading(numbering: "1 - 1")
   block(body)
 }
 
@@ -55,7 +55,7 @@
   set align(left)
   set block(above: 5pt, below: 5pt)
   show heading: set text(font: heading-font, 32pt, weight: "light")
-  set heading(numbering: "1 - 1")
+  // set heading(numbering: "1 - 1")
   block(body)
 }
 
