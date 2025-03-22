@@ -1,8 +1,8 @@
 #let body-font = "Sarasa UI SC"
 #let sans-font = "Sarasa UI SC"
 #let mono-font = "Sarasa Term CL"
-#let title-font = "HYQiHei-55S"
-#let heading-font = "HYQiHei-25S"
+#let title-font = "Sarasa UI SC"
+#let heading-font = "Sarasa UI SC"
 
 #let risi-pro(
   title: "",
