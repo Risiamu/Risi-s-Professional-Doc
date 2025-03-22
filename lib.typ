@@ -40,8 +40,8 @@
   )
   set align(left)
   set text(font: sans-font, 12pt, weight: "light", style: "italic", fill: blue)
-  set block(inset: (left: 10pt, right: 10pt))
-  body
+  set block(inset: (left: 70pt, right: 70pt))
+  block(body)
 }
 
 #let heading1(body) = {
