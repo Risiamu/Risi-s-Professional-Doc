@@ -4,5 +4,5 @@
   title: "My Document",
   authors: ("John Doe"),
   date: datetime.today(),
-  body: doc
+  doc
 )
