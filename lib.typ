@@ -28,7 +28,7 @@
     spacing: 15pt,
   )
   set block(above: 20pt, below: 20pt)
-  set text(font: body-font, 14pt, weight: "regular")
+  set text(font: body-font, 14pt, weight: "semibold")
   block(body)
 }
 
@@ -39,7 +39,7 @@
     spacing: 15pt,
   )
   set align(left)
-  set text(font: sans-font, 12pt, weight: "light", style: "italic", fill: blue)
+  set text(font: sans-font, 12pt, weight: "regular", style: "italic", fill: blue)
   set block(inset: (left: 70pt, right: 70pt), above: 20pt, below: 20pt)
   block(body)
 }
@@ -47,7 +47,7 @@
 #let heading1(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 40pt, weight: "light")
+  show heading: set text(font: heading-font, 32pt, weight: "extrabold")
   // set heading(numbering: "1 - 1")
   block(body)
 }
@@ -55,7 +55,7 @@
 #let heading2(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 28pt, weight: "light")
+  show heading: set text(font: heading-font, 26pt, weight: "extrabold")
   // set heading(numbering: "1 - 1")
   block(body)
 }
@@ -65,7 +65,7 @@
 #let title(body) = {
   set align(left)
   set block(above: 5pt, below: 20pt)
-  set text(font: title-font, 30pt, weight: "semibold")
+  set text(font: title-font, 38pt, weight: "semibold")
   block(body)
 }
 
