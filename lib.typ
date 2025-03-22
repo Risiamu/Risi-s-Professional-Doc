@@ -47,7 +47,10 @@
 #let heading1(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 32pt, weight: "extrabold")
+  show heading: set text(font: heading-font, 32pt, weight: "extrabold", underline(
+    stroke: 1.5pt + black,
+    y: -8pt
+  ))
   // set heading(numbering: "1 - 1")
   block(body)
 }
