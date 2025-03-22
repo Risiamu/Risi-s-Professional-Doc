@@ -7,9 +7,11 @@
   doc
 )
 
-#title[Here is a Title]
+#title[
+  Sample Document
+  ]
 
-#heading[
+#heading1[
   = Fist Level Heading
 ]
 
@@ -22,5 +24,9 @@
 ]
 
 #lightblueCode[
-  #raw("```typst\n#lightblueCode is used to display Code.\n```", lang: "typst")
+  #raw("
+  #lightblueCode is used to display Code.
+  And it support multiline like this.
+  Just remember to enclose a #raw
+  ", lang: "typst")
 ]
