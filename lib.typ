@@ -47,12 +47,13 @@
 #let heading1(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 32pt, weight: "extrabold", underline(
+  show heading: set text(font: heading-font, 32pt, weight: "extrabold")
+  underline(
     stroke: 1.5pt + black,
-    y: -8pt
-  ))
+    y: -8pt,
+    body
+  )
   // set heading(numbering: "1 - 1")
-  block(body)
 }
 
 #let heading2(body) = {
