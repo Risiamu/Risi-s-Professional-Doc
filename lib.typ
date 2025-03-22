@@ -63,7 +63,8 @@
     fill: rgb("#daf5ff"),
     inset: 8pt,
     radius: 4pt,
-    raw(body.text, lang: body.lang),
+    raw(body.text, lang: body.lang)
+  )
 )
 
 // Export the main template function and styles
