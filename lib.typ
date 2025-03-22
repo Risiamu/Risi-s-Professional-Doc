@@ -54,7 +54,7 @@
 #let title(body) = {
   set align(left)
   set block(above: 5pt, below: 20pt)
-  set text(font: title-font, 30pt, weight: "regular")
+  set text(font: title-font, 30pt, weight: "semibold")
   block(body)
 }
 
