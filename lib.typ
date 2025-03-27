@@ -1,6 +1,6 @@
 #let body-font = "Sarasa UI SC"
 #let sans-font = "Sarasa UI SC"
-#let mono-font = "Sarasa Term CL"
+#let mono-font = "Sarasa Term SC"
 #let title-font = "Sarasa UI SC"
 #let heading-font = "Sarasa UI SC"
 
@@ -72,14 +72,14 @@
   block(body)
 }
 
-#let lightblueCode(body) = block(
-  block(
-    fill: rgb("#daf5ff"),
+#let lightblueCode(body) = {
+    set block(fill: rgb("#daf5ff"),
     inset: 8pt,
-    radius: 4pt,
-    body
-  )
-)
+    radius: 4pt,)
+    show raw: set text(font: mono-font, 15pt, weight: "regular")
+    block(body)
+}
+
 
 // Make functions available to importing modules
 #let risi-pro = risi-pro
