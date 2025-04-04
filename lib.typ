@@ -1,7 +1,7 @@
 #let body-font = "Sarasa UI SC"
 #let sans-font = "Sarasa UI SC"
 #let mono-font = "Sarasa Term SC"
-#let title-font = "Sarasa UI SC"
+#let title-font = "GenRyuMin2 TC L"
 #let heading-font = "Sarasa UI SC"
 
 #let risi-pro(
@@ -28,7 +28,7 @@
     spacing: 15pt,
   )
   set block(above: 20pt, below: 20pt)
-  set text(font: body-font, 14pt, weight: "semibold")
+  set text(font: body-font, 11pt, weight: "light")
   block(body)
 }
 
@@ -47,16 +47,16 @@
 #let heading1(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 32pt, weight: "extrabold")
+  show heading: set text(font: heading-font, 15pt, weight: "extrabold")
   block(body)
-  line(length: 75%, stroke: 1.5pt + black)
+  line(length: 15%, stroke: 0.3pt + black)
   // set heading(numbering: "1 - 1")
 }
 
 #let heading2(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 26pt, weight: "extrabold")
+  show heading: set text(font: title-font, 16pt, weight: "extrabold")
   // set heading(numbering: "1 - 1")
   block(body)
   line(length: 45%, stroke: 1pt + black)
@@ -68,7 +68,7 @@
 #let title(body) = {
   set align(left)
   set block(above: 5pt, below: 20pt)
-  set text(font: title-font, 38pt, weight: "semibold")
+  set text(font: title-font, 44pt, weight: "regular")
   block(body)
 }
 
