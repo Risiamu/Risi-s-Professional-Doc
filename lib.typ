@@ -15,7 +15,16 @@
     numbering: "1",
     number-align: center,
     paper: "a4",
-    margin: (x: 2cm, y: 2cm)
+    margin: (x: 2cm, y: 2cm),
+    header: align(right)[
+      #rotate(30deg, circle(radius: 8pt, fill: rgb("#f0f0f0"))) 
+    ],
+    background: 
+    circle(
+      radius: 25pt,
+      fill: rgb("#f0f0f0").lighten(20%),
+      stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0"))
+    )
   )
   body
 }
