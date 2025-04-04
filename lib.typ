@@ -20,8 +20,9 @@
       center + horizon,
       dx: 30%,
       dy: -50%,
-      [#circle(
-          radius: 45pt,
+      [#rect(
+          width: 6%,
+          height:180%,
           fill: rgb("#f0f0f0").lighten(20%),
           stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
         )],
