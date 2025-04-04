@@ -76,7 +76,7 @@
     set block(fill: rgb("#daf5ff"),
     inset: 8pt,
     radius: 4pt,)
-    show raw: set text(font: mono-font, 15pt, weight: "regular")
+    show raw: set text(font: mono-font, 10pt, weight: "regular")
     block(body)
 }
 
