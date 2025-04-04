@@ -16,17 +16,62 @@
     number-align: center,
     paper: "a4",
     margin: (x: 2cm, y: 2cm),
-    background: place(
-      center + horizon,
-      dx: 30%,
-      dy: -50%,
-      [#rect(
-          width: 6%,
-          height:180%,
-          fill: rgb("#f0f0f0").lighten(20%),
-          stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
-        )],
-    ),
+    background: [
+      #place(
+        center + horizon,
+        dx: 30%,
+        dy: -50%,
+        [#rect(
+            width: 6%,
+            height: 180%,
+            fill: rgb("#f0f0f0").lighten(20%),
+            stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
+          )],
+      )
+      #place(
+        center + horizon,
+        dx: 30%,
+        dy: -40%,
+        [
+          #rotate(
+            90deg,
+            origin: center,
+            [
+              #rect(
+                width: 6%,
+                height: 180%,
+                fill: rgb("#f0f0f0").lighten(20%),
+                stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
+              )
+            ],
+          )
+
+        ],
+      )
+
+            #place(
+        center + horizon,
+        dx: 30%,
+        dy: -36%,
+        [
+          #rotate(
+            32deg,
+            origin: center,
+            [
+              #rect(
+                width: 2%,
+                height: 180%,
+                fill: rgb("#f0f0f0").lighten(20%),
+                stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
+              )
+            ],
+          )
+
+        ],
+      )
+
+
+    ],
   )
   body
 }
