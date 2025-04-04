@@ -8,7 +8,7 @@
   title: "",
   authors: (),
   date: none,
-  body
+  body,
 ) = {
   set document(author: authors, title: title)
   set page(
@@ -16,15 +16,16 @@
     number-align: center,
     paper: "a4",
     margin: (x: 2cm, y: 2cm),
-    header: align(right)[
-      #rotate(30deg, circle(radius: 8pt, fill: rgb("#f0f0f0"))) 
-    ],
-    background: 
-    circle(
-      radius: 25pt,
-      fill: rgb("#f0f0f0").lighten(20%),
-      stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0"))
-    )
+    background: place(
+      center + horizon,
+      dx: 30%,
+      dy: -50%,
+      [#circle(
+          radius: 45pt,
+          fill: rgb("#f0f0f0").lighten(20%),
+          stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
+        )],
+    ),
   )
   body
 }
@@ -69,7 +70,6 @@
   // set heading(numbering: "1 - 1")
   block(body)
   // line(length: 12%, stroke: 0.25pt + black)
-
 }
 
 
@@ -82,11 +82,22 @@
 }
 
 #let lightblueCode(body) = {
-    set block(fill: rgb("#daf5ff"),
+  set block(
+    fill: rgb("#daf5ff"),
     inset: 8pt,
-    radius: 4pt,)
-    show raw: set text(font: mono-font, 10pt, weight: "regular")
-    block(body)
+    radius: 4pt,
+  )
+  show raw: set text(font: mono-font, 10pt, weight: "regular")
+  block(body)
+}
+
+#let place(body, alignment: top + right, dx: 0pt, dy: 0pt) = {
+  place(
+    alignment,
+    dx: dx,
+    dy: dy,
+    body,
+  )
 }
 
 
@@ -97,3 +108,4 @@
 #let heading1 = heading1
 #let title = title
 #let lightblueCode = lightblueCode
+#let place = place
