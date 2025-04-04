@@ -1,7 +1,7 @@
 #let body-font = "Sarasa UI SC"
 #let sans-font = "Sarasa UI SC"
 #let mono-font = "Sarasa Term SC"
-#let title-font = "GenRyuMin2 TC L"
+#let title-font = "GenRyuMin2 TC EL"
 #let heading-font = "Sarasa UI SC"
 
 #let risi-pro(
@@ -35,11 +35,11 @@
 #let quote(body) = {
   set par(
     justify: true,
-    leading: 18pt,
+    leading: 8pt,
     spacing: 15pt,
   )
   set align(left)
-  set text(font: sans-font, 12pt, weight: "regular", style: "italic", fill: blue)
+  set text(font: sans-font, 12pt, weight: "semibold", fill: rgb("#849997"))
   set block(inset: (left: 70pt, right: 70pt), above: 20pt, below: 20pt)
   block(body)
 }
@@ -47,19 +47,19 @@
 #let heading1(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: heading-font, 15pt, weight: "extrabold")
+  show heading: set text(font: heading-font, 15pt, weight: "semibold", fill: rgb("#727272"))
   block(body)
-  line(length: 15%, stroke: 0.3pt + black)
+  // line(length: 15%, stroke: 0.3pt + black)
   // set heading(numbering: "1 - 1")
 }
 
 #let heading2(body) = {
   set align(left)
   set block(above: 5pt, below: 5pt)
-  show heading: set text(font: title-font, 16pt, weight: "extrabold")
+  show heading: set text(font: title-font, 16pt, weight: "regular")
   // set heading(numbering: "1 - 1")
   block(body)
-  line(length: 45%, stroke: 1pt + black)
+  // line(length: 12%, stroke: 0.25pt + black)
 
 }
 
@@ -68,7 +68,7 @@
 #let title(body) = {
   set align(left)
   set block(above: 5pt, below: 20pt)
-  set text(font: title-font, 44pt, weight: "regular")
+  set text(font: title-font, 34pt, weight: "regular")
   block(body)
 }
 
