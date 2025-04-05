@@ -4,6 +4,32 @@
 #let title-font = "GenRyuMin2 TC EL"
 #let heading-font = "Sarasa UI SC"
 
+// Common rectangle strip utility
+#let rectangle-strip(width, height, rotation: 0deg, dx: 0pt, dy: 0pt) = {
+  rotate(
+    rotation,
+    origin: center,
+    [
+      #rect(
+        width: width,
+        height: height,
+        fill: rgb("#f0f0f0").lighten(20%),
+        stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
+      )
+    ]
+  )
+}
+
+// Rotated rectangle utility
+#let rotated-rect(width, height, rotation: 0deg, dx: 0pt, dy: 0pt) = {
+  place(
+    center + horizon,
+    dx: dx,
+    dy: dy,
+    rectangle-strip(width, height, rotation: rotation)
+  )
+}
+
 #let risi-pro(
   title: "",
   authors: (),
@@ -17,60 +43,9 @@
     paper: "a4",
     margin: (x: 2cm, y: 2cm),
     background: [
-      #place(
-        center + horizon,
-        dx: 30%,
-        dy: -50%,
-        [#rect(
-            width: 6%,
-            height: 180%,
-            fill: rgb("#f0f0f0").lighten(20%),
-            stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
-          )],
-      )
-      #place(
-        center + horizon,
-        dx: 30%,
-        dy: -40%,
-        [
-          #rotate(
-            90deg,
-            origin: center,
-            [
-              #rect(
-                width: 6%,
-                height: 180%,
-                fill: rgb("#f0f0f0").lighten(20%),
-                stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
-              )
-            ],
-          )
-
-        ],
-      )
-
-            #place(
-        center + horizon,
-        dx: 30%,
-        dy: -36%,
-        [
-          #rotate(
-            32deg,
-            origin: center,
-            [
-              #rect(
-                width: 2%,
-                height: 180%,
-                fill: rgb("#f0f0f0").lighten(20%),
-                stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
-              )
-            ],
-          )
-
-        ],
-      )
-
-
+      #rotated-rect(6%, 180%, dx: 30%, dy: -50%)
+      #rotated-rect(6%, 180%, rotation: 90deg, dx: 30%, dy: -40%)
+      #rotated-rect(2%, 180%, rotation: 32deg, dx: 30%, dy: -36%)
     ],
   )
   body
