@@ -103,7 +103,7 @@
 
 #let lightblueCode(body) = {
   set block(
-    fill: rgb("#daf5ff"),
+    fill: rgb("#f2f8fa"),
     inset: 8pt,
     radius: 4pt,
   )
