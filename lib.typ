@@ -43,7 +43,7 @@
     paper: "a4",
     margin: (x: 2cm, y: 2cm),
     background: [
-      #rotated-rect(6%, 180%, dx: 30%, dy: -50%)
+      #rotated-rect(6%, 200%, dx: 30%, dy: -50%)
       #rotated-rect(6%, 180%, rotation: 90deg, dx: 30%, dy: -40%)
       #rotated-rect(2%, 180%, rotation: 32deg, dx: 30%, dy: -36%)
     ],
