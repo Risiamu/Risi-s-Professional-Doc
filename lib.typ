@@ -59,7 +59,7 @@
   )
   set block(above: 20pt, below: 20pt)
   set text(font: body-font, 11pt, weight: "light")
-  block(body)
+  block(body + parbreak())
 }
 
 #let quote(body) = {
