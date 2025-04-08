@@ -53,7 +53,7 @@
 #let normal(body) = {
   set par(
     justify: true,
-    first-line-indent: (amount: 0.75cm, all: true),
+    first-line-indent: (amount: 0.35cm, all: true),
     leading: 10pt,
     spacing: 15pt,
   )
