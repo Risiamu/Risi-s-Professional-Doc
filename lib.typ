@@ -16,7 +16,7 @@
         fill: rgb("#f0f0f0").lighten(20%),
         stroke: (thickness: 0.5pt, paint: rgb("#f0f0f0")),
       )
-    ]
+    ],
   )
 }
 
@@ -26,7 +26,7 @@
     center + horizon,
     dx: dx,
     dy: dy,
-    rectangle-strip(width, height, rotation: rotation)
+    rectangle-strip(width, height, rotation: rotation),
   )
 }
 
@@ -77,17 +77,17 @@
 #let heading1(body) = {
   set align(left)
   set block(above: 20pt, below: 20pt)
-  show heading: set text(font: heading-font, 15pt, weight: "semibold", fill: rgb("#727272"))
+  show heading: set text(font: heading-font, 16pt, weight: "semibold", fill: rgb("#727272"))
+  set heading(numbering: "1.1")
   block(body)
   // line(length: 15%, stroke: 0.3pt + black)
-  // set heading(numbering: "1 - 1")
 }
 
 #let heading2(body) = {
   set align(left)
   set block(above: 20pt, below: 20pt)
-  show heading: set text(font: title-font, 16pt, weight: "regular")
-  // set heading(numbering: "1 - 1")
+  show heading: set text(font: title-font, 14pt, weight: "regular")
+  set heading(numbering: "1.1")
   block(body)
   // line(length: 12%, stroke: 0.25pt + black)
 }
