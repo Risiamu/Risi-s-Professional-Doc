@@ -76,7 +76,7 @@
 
 #let heading1(body) = {
   set align(left)
-  set block(above: 5pt, below: 5pt)
+  set block(above: 20pt, below: 20pt)
   show heading: set text(font: heading-font, 15pt, weight: "semibold", fill: rgb("#727272"))
   block(body)
   // line(length: 15%, stroke: 0.3pt + black)
